@@ -169,7 +169,7 @@ class WwwSpider(scrapy.Spider):
             )
 
             i['reviews']['comments'] = []
-            data = json.loads(post.body)
+            data = json.loads(post.body.decode("utf-8"))
             for comento in data['results']:
                 comment = {}
                 comment['name'] = comento['displayName']
