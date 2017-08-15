@@ -1,0 +1,2 @@
+scrapy-inline-requests==0.3.1
+

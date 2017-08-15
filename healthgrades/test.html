@@ -1,0 +1,34 @@
+    def parse(self, response):
+        i = {}
+        arguments = response.url.split('?')
+        i['arguments'] = arguments[1:]
+        arguments_dict = {}
+        for argument in arguments[1:]:
+            args = argument.split('=')
+            arguments_dict[args[0]] = args[1]
+
+        yield i
+
+        try:
+            uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
+            first_name = arguments_dict['name']
+            last_name = arguments_dict['surname']
+            title = 'MD'
+            state = arguments_dict['state']
+            full_name = first_name + '%20' + last_name
+            url = 'https://www.healthgrades.com/api3/usearch?userLocalTime=10:27&what={0}&where=NJ&state={1}&source=Solr&isStateOnly=true&sort.provider=bestmatch&categories=1&sessionId=S8739336cee27a5a2&requestId=R1696a9b870bbd8db&pageSize.provider=36&pageNum=1&isFirstRequest=true'.format(
+                full_name, state)
+            yield Request(
+                url=url,
+                meta={
+                    'proxy': 'http://158.69.170.220:3128',
+                    'uid':uid,
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'title': title,
+                    'state': state,
+                },
+                callback=self.search_doctor
+            )
+        except:
+            pass
