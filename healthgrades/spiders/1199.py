@@ -1,5 +1,5 @@
-import scrapy
 from __future__ import absolute_import
+import scrapy
 from healthgrades.items import InsuranceItem
 from nameparser import HumanName
 from w3lib.html import remove_tags
