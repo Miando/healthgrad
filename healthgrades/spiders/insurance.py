@@ -9,45 +9,53 @@ class InsuranceSpider(scrapy.Spider):
         # 'ROBOTSTXT_OBEY': False
     }
 
-    
+
 
     def parse(self, response):
         i = {}
+        # print(response.url.split('?'))
         arguments = response.url.split('?')
         i['arguments'] = arguments[1:]
         arguments_dict = {}
-        try:
-            # uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
-            first_name = arguments_dict['name'].lower()
-            last_name = arguments_dict['surname'].lower()
-            city = arguments_dict['city']
-            state = arguments_dict['state']
-            # full_name = first_name + '%20' + last_name
+        for argument in arguments[1:]:
+           args = argument.split('=')
+           arguments_dict[args[0]] = args[1]
 
-        # state = 'NY'
-        # city = 'NEW YORK'
-        # first_name = 'DONALD'.lower()
-        # last_name = 'SMITH'.lower()
-            location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{},%20{}/ZP,CS/true'\
-                .format(city, state)
-            yield scrapy.Request(
-                url=location,
-                meta={
-                    'first_name': first_name,
-                    'last_name': last_name,
-                    'city': city,
-                    'state': state,
-                },
-                callback=self.location_medicare
-            )
-        except:
-            pass
+        yield i
+        # try:
+            # uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
+        first_name = arguments_dict['name'].lower()
+        last_name = arguments_dict['surname'].lower()
+        city = arguments_dict['city']
+        state = arguments_dict['state']
+        # full_name = first_name + '%20' + last_name
+
+    # state = 'NY'
+    # city = 'NEW YORK'
+    # first_name = 'DONALD'.lower()
+    # last_name = 'SMITH'.lower()
+        location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{},%20{}/ZP,CS/true'\
+            .format(city, state)
+        yield scrapy.Request(
+            url=location,
+            meta={
+                'first_name': first_name,
+                'last_name': last_name,
+                'city': city,
+                'state': state,
+            },
+            callback=self.location_medicare
+        )
+        # except:
+        #     pass
 
     def location_medicare(self, response):
         try:
             data = json.loads(response.body.decode())
         except:
             data = {}
+        lat = ''
+        lng = ''
         for d in data:
             lat = d.get('lat')
             lng = d.get('lng')
