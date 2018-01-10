@@ -107,7 +107,7 @@ class InsuranceSpider(scrapy.Spider):
     def parse_item_medicare(self, response):
         i = InsuranceItem()
         a = {}
-        data = json.loads(response.body.decode())
+        data = json.loads(response.body.decode('ascii', 'ignore'))
         for row in data:
             a[row.get('id')] = row.get('name')
         specialties = response.meta.get('specialties')
