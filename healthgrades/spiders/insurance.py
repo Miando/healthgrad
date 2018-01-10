@@ -9,23 +9,72 @@ class InsuranceSpider(scrapy.Spider):
         # 'ROBOTSTXT_OBEY': False
     }
 
-    def start_requests(self):
-        state = 'NY'
-        city = 'NEW YORK'
-        first_name = 'DONALD'.lower()
-        last_name = 'SMITH'.lower()
-        location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{},%20{}/ZP,CS/true'\
-            .format(city, state)
-        yield scrapy.Request(
-            url=location,
-            meta={
-                'first_name': first_name,
-                'last_name': last_name,
-                'city': city,
-                'state': state,
-            },
-            callback=self.location_medicare
-        )
+    def parse(self, response):
+        i = {}
+        arguments = response.url.split('?')
+        i['arguments'] = arguments[1:]
+        arguments_dict = {}
+        # for argument in arguments[1:]:
+        #    args = argument.split('=')
+        #    arguments_dict[args[0]] = args[1]
+
+        # yield i
+
+        try:
+            # uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
+            first_name = arguments_dict['name']
+            last_name = arguments_dict['surname']
+            title = arguments_dict['title']
+            state = arguments_dict['state']
+            full_name = first_name + '%20' + last_name
+            url = 'https://www.healthgrades.com/api3/usearch?userLocalTime=10:27&what={0}&where=NJ&state={1}&source=Solr&isStateOnly=true&sort.provider=bestmatch&categories=1&sessionId=S8739336cee27a5a2&requestId=R1696a9b870bbd8db&pageSize.provider=36&pageNum=1&isFirstRequest=true'.format(
+                full_name, state)
+            yield scrapy.Request(
+                url=url,
+                meta={
+                    # 'proxy': 'http://158.69.170.220:3128',
+                    # 'uid':uid,
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'title': title,
+                    'state': state,
+                },
+                callback=self.start_parse
+            )
+        except:
+            pass
+
+    def parse(self, response):
+        i = {}
+        arguments = response.url.split('?')
+        i['arguments'] = arguments[1:]
+        arguments_dict = {}
+        try:
+            # uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
+            first_name = arguments_dict['name'].lower()
+            last_name = arguments_dict['surname'].lower()
+            city = arguments_dict['city']
+            state = arguments_dict['state']
+            # full_name = first_name + '%20' + last_name
+
+        # state = 'NY'
+        # city = 'NEW YORK'
+        # first_name = 'DONALD'.lower()
+        # last_name = 'SMITH'.lower()
+            location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{},%20{}/ZP,CS/true'\
+                .format(city, state)
+            yield scrapy.Request(
+                url=location,
+                meta={
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'city': city,
+                    'state': state,
+                },
+                callback=self.location_medicare
+            )
+        except:
+            pass
 
     def location_medicare(self, response):
         try:
