@@ -20,6 +20,10 @@ NEWSPIDER_MODULE = 'healthgrades.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+DOWNLOAD_TIMEOUT = 1000
+# CRAWLERA_ENABLED = True
+# CRAWLERA_APIKEY = 'c6046e201a904e2eab9c25415f9f29ce'
+# DOWNLOADER_MIDDLEWARES = {'scrapy_crawlera.CrawleraMiddleware': 600}
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -63,9 +67,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'healthgrades.pipelines.HealthgradesPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'healthgrades.pipelines.HealthgradesPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

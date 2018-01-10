@@ -17,11 +17,11 @@ class WwwSpider(scrapy.Spider):
         arguments = response.url.split('?')
         i['arguments'] = arguments[1:]
         arguments_dict = {}
-        for argument in arguments[1:]:
-            args = argument.split('=')
-            arguments_dict[args[0]] = args[1]
+        #for argument in arguments[1:]:
+        #    args = argument.split('=')
+        #    arguments_dict[args[0]] = args[1]
 
-        yield i
+        #yield i
 
         try:
             #uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
@@ -35,7 +35,7 @@ class WwwSpider(scrapy.Spider):
             yield Request(
                 url=url,
                 meta={
-                    'proxy': 'http://158.69.170.220:3128',
+                    #'proxy': 'http://158.69.170.220:3128',
                     #'uid':uid,
                     'first_name': first_name,
                     'last_name': last_name,
@@ -70,7 +70,7 @@ class WwwSpider(scrapy.Spider):
                 yield Request(
                     url=url,
                     meta={
-                        'proxy': 'http://158.69.170.220:3128',
+                        #'proxy': 'http://158.69.170.220:3128',
                         'first_name': first_name,
                         'last_name': last_name,
                         'title': title,
@@ -157,9 +157,9 @@ class WwwSpider(scrapy.Spider):
                     "Referer": response.url,
                     "Accept-Encoding": "gzip, deflate, br, json",
                 },
-                meta={
-                    'proxy': 'http://158.69.170.220:3128',
-                },
+                #meta={
+                #    'proxy': 'http://158.69.170.220:3128',
+                #},
                 body=json.dumps({
                     'pwid': doctor_id,
                     'currentPage': '1',
