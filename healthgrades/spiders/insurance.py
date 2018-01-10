@@ -1,6 +1,7 @@
 import scrapy
 import json
 from healthgrades.items import InsuranceItem
+import MySQLdb as dbapi
 
 
 class InsuranceSpider(scrapy.Spider):
@@ -10,7 +11,6 @@ class InsuranceSpider(scrapy.Spider):
     }
 
 
-
     def parse(self, response):
         i = {}
         # print(response.url.split('?'))
@@ -18,24 +18,23 @@ class InsuranceSpider(scrapy.Spider):
         i['arguments'] = arguments[1:]
         arguments_dict = {}
         for argument in arguments[1:]:
-           args = argument.split('=')
-           arguments_dict[args[0]] = args[1]
+            args = argument.split('=')
+            arguments_dict[args[0]] = args[1]
 
         yield i
+
+
         # try:
             # uid = "58fc6bb51d70d0fbc2a2dfc64c22fd61"
-        first_name = arguments_dict['name'].lower()
-        last_name = arguments_dict['surname'].lower()
-        city = arguments_dict['city']
-        state = arguments_dict['state']
-        # full_name = first_name + '%20' + last_name
+        first_name = arguments_dict.get('name').lower()
+        last_name = arguments_dict.get('surname').lower()
+        city = arguments_dict.get('city')
+        state = arguments_dict.get('state')
 
-    # state = 'NY'
-    # city = 'NEW YORK'
-    # first_name = 'DONALD'.lower()
-    # last_name = 'SMITH'.lower()
-        location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{},%20{}/ZP,CS/true'\
+        location = 'https://www.medicare.gov/geography/Geography.svc/LocationAutocompleteByZipRank/{}, {}/ZP,CS/false' \
             .format(city, state)
+        if city:
+            city = city.replace('%20', '')
         yield scrapy.Request(
             url=location,
             meta={
@@ -46,8 +45,57 @@ class InsuranceSpider(scrapy.Spider):
             },
             callback=self.location_medicare
         )
+        # full_name = first_name + '%20' + last_name
+        dbServer = '159.89.39.167'
+        dbPass = '&/rDGW,GHv?fFCM{3HnG'
+        dbSchema = 'health'
+        dbUser = 'root'
+        spider_names = ['amerihealth', 'horizonblue', '1199']
+        for s in spider_names:
+            print(s)
+            dbQuery = "SELECT * FROM  health.data WHERE spider_name = '{}' AND lower(first_name) ='{}' AND lower(last_name) ='{}' AND lower(state) ='{}';".format(
+                s, first_name.lower(), last_name.lower(), state.lower())
+            # dbQuery = "SELECT * FROM  health.data WHERE spider_name = '{}' AND lower(first_name) ='{}';".format(
+            #     s, first_name.lower())
+            db = dbapi.connect(host=dbServer, user=dbUser, passwd=dbPass)
+            cur = db.cursor()
+            cur.execute(dbQuery)
+            results = cur.fetchall()
+            if results:
+                p = {}
+                pp = []
+                result=results[0]
+
+                p={}
+                p['full_name'] = result[1]
+                p['url'] = result[2]
+
+                p['first_name'] = result[3]
+                p['last_name'] = result[4]
+                p['speciality'] = result[5]
+                p['city'] = result[6]
+                p['state'] = result[7]
+                p['general_plan'] = result[8]
+                p['plans'] = result[9]
+                p['spider_name'] = result[10]
+
+            else:
+                p = {}
+                p['result'] = 'no insurance'
+                p['spider_name'] = s
+            yield p
+
+    # state = 'NY'
+    # city = 'NEW YORK'
+    # first_name = 'DONALD'.lower()
+    # last_name = 'SMITH'.lower()
+
         # except:
         #     pass
+
+    # def get_from_db(self, first_name, last_name, city, state):
+
+
 
     def location_medicare(self, response):
         try:
@@ -59,8 +107,12 @@ class InsuranceSpider(scrapy.Spider):
         for d in data:
             lat = d.get('lat')
             lng = d.get('lng')
-        url = 'https://www.medicare.gov/api/v1/providers/physician?filters[type]=ep&paging=1|1000&filters[proname]=Smith&lat={}&lng={}&dist=15&&prefix=y'.\
-            format(lat, lng)
+            break
+        url = 'https://www.medicare.gov/api/v1/providers/physician?filters[type]=ep&paging=1|200&filters[proname]={}&lat={}&lng={}&dist=15&&prefix=y'. \
+            format(response.meta.get('last_name').lower(), lat, lng)
+        print (url)
+        # url = 'https://www.medicare.gov/api/v1/providers/physician?filters[type]=ep&paging=1|200&filters[proname]=smith&lat=40.7143528&lng=-74.0059731&dist=15&&prefix=y'.\
+
         yield scrapy.Request(
             url=url,
             meta={
@@ -78,6 +130,7 @@ class InsuranceSpider(scrapy.Spider):
             data = json.loads(response.body.decode())
         except:
             data = {}
+        print(data)
         for person in data:
             if person.get('Name'):
                 if person.get('Name').get('Last'):
