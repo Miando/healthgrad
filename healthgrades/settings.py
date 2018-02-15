@@ -64,11 +64,14 @@ DOWNLOAD_TIMEOUT = 1000
 #EXTENSIONS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
+IMAGES_STORE = 'images'
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'healthgrades.pipelines.HealthgradesPipeline': 300,
+    'scrapy.pipelines.images.ImagesPipeline': 1,
+    'healthgrades.pipelines.HealthgradesPipeline': 300,
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

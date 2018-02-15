@@ -8,6 +8,34 @@
 import scrapy
 
 
+class FullItem(scrapy.Item):
+    first_name = scrapy.Field()
+    last_name = scrapy.Field()
+    full_name = scrapy.Field()
+    state = scrapy.Field()
+    city = scrapy.Field()
+    speciality = scrapy.Field()
+    plans = scrapy.Field()
+    general_plan = scrapy.Field()
+    url = scrapy.Field()
+    spider_name = scrapy.Field()
+    date = scrapy.Field()
+    education = scrapy.Field()
+    board_sertifications = scrapy.Field()
+    conditions_treated = scrapy.Field()
+    office_address = scrapy.Field()
+    age = scrapy.Field()
+    gender = scrapy.Field()
+    midle_name = scrapy.Field()
+    subspecialty = scrapy.Field()
+    office_name = scrapy.Field()
+    procedures = scrapy.Field()
+    awards_and_recognition = scrapy.Field()
+    memberships = scrapy.Field()
+    languages_spoken = scrapy.Field()
+    image_urls = scrapy.Field()
+    bio = scrapy.Field()
+
 class InsuranceItem(scrapy.Item):
     first_name = scrapy.Field()
     last_name = scrapy.Field()

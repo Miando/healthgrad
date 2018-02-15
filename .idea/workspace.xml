@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c0019c-c03e-43ad-8318-ab48368b75ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/insurance.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/insurance.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/items.py" afterPath="$PROJECT_DIR$/healthgrades/items.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/settings.py" afterPath="$PROJECT_DIR$/healthgrades/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapinghub.yml" afterPath="$PROJECT_DIR$/scrapinghub.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,33 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="error.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/error.py">
+      <file leaf-file-name="healthgrad.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="horizonblue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/horizonblue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insurance_healthgrad.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance_healthgrad.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            <state relative-caret-position="7738">
+              <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -47,23 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="real_time.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/real_time.py">
+      <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="23" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insurance.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="56" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="795">
+              <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -74,18 +48,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="amerihealth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/amerihealth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="1325">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -94,8 +58,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="1325">
+              <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
               </folding>
@@ -103,21 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1199.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/1199.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+            <state relative-caret-position="3922">
+              <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -154,6 +108,14 @@
       <find>mxr02.1199funds.org</find>
       <find>parse_item</find>
       <find>prin</find>
+      <find>ignore</find>
+      <find>pecial</find>
+      <find>cert</find>
+      <find>reated</find>
+      <find>ocedur</find>
+      <find>awa</find>
+      <find>member</find>
+      <find>office_address</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,30 +129,33 @@
         <option value="$PROJECT_DIR$/healthgrades/test.html" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/real_time.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/texas.py" />
-        <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrad.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/new_jersey.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/new_jersey_hospital_last_cool.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/new_jersey_doctors.py" />
         <option value="$PROJECT_DIR$/error.py" />
-        <option value="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/united_health_care.py" />
         <option value="$PROJECT_DIR$/miando.txt" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/insurance_healthgrad.py" />
-        <option value="$PROJECT_DIR$/healthgrades/settings.py" />
-        <option value="$PROJECT_DIR$/healthgrades/items.py" />
         <option value="$PROJECT_DIR$/healthgrades/pipelines.py" />
-        <option value="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/amerihealth.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/1199.py" />
         <option value="$PROJECT_DIR$/healthgrades/spiders/insurance.py" />
+        <option value="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" />
+        <option value="$PROJECT_DIR$/scrapinghub.yml" />
+        <option value="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" />
+        <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrad.py" />
+        <option value="$PROJECT_DIR$/healthgrades/healthgrades_full.py" />
+        <option value="$PROJECT_DIR$/healthgrades/items.py" />
+        <option value="$PROJECT_DIR$/healthgrades/settings.py" />
+        <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1275" />
-    <option name="y" value="422" />
-    <option name="width" value="1396" />
-    <option name="height" value="1110" />
+    <option name="y" value="485" />
+    <option name="width" value="1398" />
+    <option name="height" value="1083" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -227,7 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +215,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,12 +224,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/healthgrades/spiders" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/healthgrades/spiders" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -384,10 +350,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1275" y="422" width="3842" height="2021" extended-state="6" />
+    <frame x="0" y="-9" width="3840" height="2048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12238325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2737686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -417,35 +383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/real_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -676,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log_insurance_healthgrad_1.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -690,20 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,80 +641,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/horizonblue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/amerihealth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/1199.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance_healthgrad.py">
+    <entry file="file://$PROJECT_DIR$/new droplet passwor.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
+    <entry file="file://$PROJECT_DIR$/scrapinghub.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="59" column="2" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="212">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8427">
+          <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/real_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="1007">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/amerihealth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1510">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance_healthgrad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="185" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/horizonblue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7738">
+          <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="1325">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
+    <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="56" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="3922">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

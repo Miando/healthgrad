@@ -28,6 +28,7 @@ class HorizonBlueSpider(scrapy.Spider):
     def parse_table(self, response):
         links = response.xpath('//td[@class="opd-name-list"]/a/@href').extract()
         for link in links:
+            print(link)
             yield scrapy.Request(
                 url='http://doctorfinder.horizonblue.com{}'.format(link),
                 meta={
@@ -48,6 +49,7 @@ class HorizonBlueSpider(scrapy.Spider):
             )
 
     def parse_item(self, response):
+        print(1)
         i = InsuranceItem()
         full_name = remove_tags(response.xpath('//h3[@class="media-heading profile-heading"]')
                                 .extract_first(default=''))
