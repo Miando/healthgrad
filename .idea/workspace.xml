@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c0019c-c03e-43ad-8318-ab48368b75ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/items.py" afterPath="$PROJECT_DIR$/healthgrades/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/settings.py" afterPath="$PROJECT_DIR$/healthgrades/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/error_insurance_healthgrad.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/horizonblue.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapinghub.yml" afterPath="$PROJECT_DIR$/scrapinghub.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,20 +16,8 @@
       <file leaf-file-name="healthgrad.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7738">
+            <state relative-caret-position="1510">
               <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -73,6 +53,38 @@
             <state relative-caret-position="3922">
               <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insurance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6996">
+              <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new droplet passwor.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new droplet passwor.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11448">
+              <caret line="216" column="36" lean-forward="false" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -648,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new droplet passwor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapinghub.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -673,13 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8427">
-          <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -713,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7738">
+        <state relative-caret-position="1510">
           <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -747,10 +745,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6996">
+          <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new droplet passwor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="11448">
+          <caret line="216" column="36" lean-forward="false" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

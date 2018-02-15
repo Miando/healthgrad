@@ -207,9 +207,12 @@ class InsuranceHealthgradSpider(scrapy.Spider):
         i['last_name'] = response.meta['last_name']
         i['specialty'] = response.meta['specialty']
         i['state'] = response.meta['state']
+        insurances = []
         for n, div in enumerate(response.xpath('//*[@id="insurance-payor-list"]/li')):
-            i['payor{}'.format(str(n+1))] = div.xpath('.//div[@class="insurance-payor"]/text()').extract_first()
+            insurance = {}
+            payor = div.xpath('.//div[@class="insurance-payor"]/text()').extract_first()
             for n2, div2 in enumerate(div.xpath('.//div[@class="insurance-plan"]/text()').extract()):
-                i['payor{}_plan{}'.format(str(n+1), str(n2+1))] = div2
-
+                insurance[payor] = div2
+                insurances.append(insurance)
+        i['insurances'] = insurances
         yield i
