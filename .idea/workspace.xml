@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c0019c-c03e-43ad-8318-ab48368b75ca" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.~lock.test.csv#" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +18,7 @@
       <file leaf-file-name="healthgrad.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1510">
+            <state relative-caret-position="7738">
               <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -60,7 +62,7 @@
       <file leaf-file-name="insurance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6996">
+            <state relative-caret-position="8427">
               <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
               <folding />
             </state>
@@ -80,8 +82,8 @@
       <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11448">
-              <caret line="216" column="36" lean-forward="false" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+            <state relative-caret-position="-602">
+              <caret line="162" column="110" lean-forward="false" selection-start-line="162" selection-start-column="110" selection-end-line="162" selection-end-column="110" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -128,6 +130,7 @@
       <find>awa</find>
       <find>member</find>
       <find>office_address</find>
+      <find>data-hgoname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +230,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,7 +368,7 @@
     <frame x="0" y="-9" width="3840" height="2048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12238325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12399356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2737686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -711,7 +714,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1510">
+        <state relative-caret-position="7738">
           <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -747,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/insurance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6996">
+        <state relative-caret-position="8427">
           <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="65" />
           <folding />
         </state>
@@ -763,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11448">
-          <caret line="216" column="36" lean-forward="false" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+        <state relative-caret-position="-602">
+          <caret line="162" column="110" lean-forward="false" selection-start-line="162" selection-start-column="110" selection-end-line="162" selection-end-column="110" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
