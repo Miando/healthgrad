@@ -87,7 +87,6 @@ class InsuranceHealthgradSpider(scrapy.Spider):
             try:
                 age = li['age']
                 images = ['https:' + li['imagePaths'][0]]
-                print(images)
                 office_address = li['address']
                 gender = li['gender']
                 full_name = li['displayName']
@@ -215,4 +214,4 @@ class InsuranceHealthgradSpider(scrapy.Spider):
                 insurance[payor] = div2
                 insurances.append(insurance)
         i['insurances'] = insurances
-        yield i
+        return i
