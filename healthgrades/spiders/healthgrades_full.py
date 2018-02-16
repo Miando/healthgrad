@@ -214,4 +214,4 @@ class InsuranceHealthgradSpider(scrapy.Spider):
                 insurance[payor] = div2
                 insurances.append(insurance)
         i['insurances'] = insurances
-        return i
+        yield i
