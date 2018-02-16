@@ -160,7 +160,7 @@ class InsuranceHealthgradSpider(scrapy.Spider):
         i['midle_name'] = response.meta['midle_name']
         i['subspecialty'] = response.meta['subspecialty']
         i['office_name'] = response.xpath('//h3[@data-hgoname="summary-practice-name"]/text()').extract_first()
-        i['procedures'] = response.xpath('//div[@id="footer-section"]//a/@href').re('.+procedures.+')
+        i['procedures'] = response.xpath('//div[@id="footer-section"]//a[contains(@href, "procedures")]/text()').extract()
         i['awards_and_recognition'] = response.xpath(
             '//section[@data-qa-target="learn-awards-section"]//h5/text()').extract()
         i['memberships'] = response.xpath('//section[@data-qa-target="learn-memberships-section"]//ul/li/text()').extract()

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c0019c-c03e-43ad-8318-ab48368b75ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/settings.py" afterPath="$PROJECT_DIR$/healthgrades/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" afterPath="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="927">
-              <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="1033">
+              <caret line="38" column="15" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="38" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="healthgrades_full.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1113">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="871">
+              <caret line="165" column="85" lean-forward="true" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -161,8 +160,8 @@
         <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrad.py" />
         <option value="$PROJECT_DIR$/healthgrades/healthgrades_full.py" />
         <option value="$PROJECT_DIR$/healthgrades/items.py" />
-        <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
         <option value="$PROJECT_DIR$/healthgrades/settings.py" />
+        <option value="$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py" />
       </list>
     </option>
   </component>
@@ -756,21 +755,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
+    <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1033">
+          <caret line="38" column="15" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="38" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/healthgrades/settings.py">
+    <entry file="file://$PROJECT_DIR$/healthgrades/spiders/healthgrades_full.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="871">
+          <caret line="165" column="85" lean-forward="true" selection-start-line="165" selection-start-column="85" selection-end-line="165" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
